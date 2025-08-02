@@ -27,7 +27,7 @@ const Home = () => {
       const category = await AsyncStorage.getItem("category") || "Business"
       const initialQuery = await AsyncStorage.getItem("query") || ""
 
-      getEveryThingArticle(initialQuery)
+      getEveryThingArticle(initialQuery || "Business in India")
       getTopHeadlineArticle(country, category)
     }
 

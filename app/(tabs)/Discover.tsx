@@ -4,7 +4,7 @@ import { categoryArray } from '@/constants/Category'
 import { useNewsStore } from '@/store/NewsStore'
 import ArticleCard from '@/components/ArticleCard';
 
-const { width } = Dimensions.get("window");
+
 
 const Discover = () => {
   const [category, setCategory] = useState<string>("Business")

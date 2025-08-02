@@ -5,7 +5,7 @@ import { router } from "expo-router";
 export default function Index() {
   return (
     <ImageBackground
-      source={require("../assets/images/home_background.webp")}
+      source={require("../assets/images/home_background.png")}
       resizeMode="cover" // ✅ You can try: "cover", "contain", "stretch", etc.
       style={{
         flex: 1,
@@ -30,7 +30,7 @@ export default function Index() {
       </Text>
 
       <TouchableOpacity
-        onPress={() => router.push("(tabs)")}
+        onPress={() => router.push("/(tabs)")}
         style={{
           backgroundColor: "#24e54390",
           padding: 16,
